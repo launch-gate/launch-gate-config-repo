@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: always
