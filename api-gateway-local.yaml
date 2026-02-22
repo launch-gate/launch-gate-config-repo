@@ -1,0 +1,20 @@
+server:
+  port: 8700
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        # пока маршруты можно оставить как заглушки
+        # Пример маршрута на будущий identity-service:
+        # - id: identity-service
+        #   uri: lb://identity-service
+        #   predicates:
+        #     - Path=/api/identity/**
+        #   filters:
+        #     - StripPrefix=2
